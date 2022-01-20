@@ -107,7 +107,7 @@ public class SpringApplicationContext {
                         System.out.println(clazz);
                         Component annotation1 = clazz.getAnnotation(Component.class);
                         String beanName = annotation1.value();
-                        if("",equals(beanName)){
+                        if("".equals(beanName)){
                             beanName = Introspector.decapitalize(clazz.getSimpleName());
                         }
                         BeanDefination beanDefination = new BeanDefination();
